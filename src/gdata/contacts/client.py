@@ -13,7 +13,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-from types import ListType, DictionaryType
 
 
 """Contains a client to communicate with the Contacts servers.
@@ -153,13 +152,13 @@ class ContactsClient(gdata.client.GDClient):
       contact.birthday = birthday
 
     if calendar_link is not None:
-      if type(calendar_link) is not ListType:
+      if type(calendar_link) is not list:
         calendar_link = [calendar_link]
 
       for link in calendar_link:
         if not isinstance(link, gdata.contacts.data.CalendarLink):
-          if type(link) is not DictionaryType:
-            raise TypeError, "calendar_link Requires dictionary not %s" % type(link)
+          if type(link) is not dict:
+            raise TypeError("calendar_link Requires dictionary not %s" % type(link))
 
           link = gdata.contacts.data.CalendarLink(
                                                   rel=link.get("rel", None),

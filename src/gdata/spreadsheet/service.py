@@ -326,7 +326,7 @@ class SpreadsheetsService(gdata.service.GDataService):
       The inserted row
     """
     new_entry = gdata.spreadsheet.SpreadsheetsList()
-    for k, v in row_data.iteritems():
+    for k, v in row_data.items():
       new_custom = gdata.spreadsheet.Custom()
       new_custom.column = k
       new_custom.text = v
@@ -354,7 +354,7 @@ class SpreadsheetsService(gdata.service.GDataService):
       The updated row
     """
     entry.custom = {}
-    for k, v in new_row_data.iteritems():
+    for k, v in new_row_data.items():
       new_custom = gdata.spreadsheet.Custom()
       new_custom.column = k
       new_custom.text = v

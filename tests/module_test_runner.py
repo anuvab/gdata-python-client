@@ -44,7 +44,7 @@ class ModuleTestRunner(object):
     runner = unittest.TextTestRunner(verbosity=2)
     for module in self.modules:
       # Set any module variables according to the contents in the settings
-      for setting, value in self.settings.iteritems():
+      for setting, value in self.settings.items():
         try:
           setattr(module, setting, value)
         except AttributeError:
