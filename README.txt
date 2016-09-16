@@ -1,3 +1,6 @@
+This is the updated gdata library for python3. Updated by running 2to3. 
+Create an issue if it needs more updates.
+
  Copyright (C) 2006-2014 Google Inc.
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,3 +19,5 @@
 
   ElementTree - For XML parsing, download here: 
 http://effbot.org/zone/element-index.htm
+
+
