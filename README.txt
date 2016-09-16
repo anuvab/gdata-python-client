@@ -1,5 +1,5 @@
 This is the updated gdata library for python3. Updated by running 2to3. 
-Create an issue if it needs more updates.
+Need help to get it running.
 
  Copyright (C) 2006-2014 Google Inc.
 
